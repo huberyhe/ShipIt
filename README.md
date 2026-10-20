@@ -1,8 +1,10 @@
 # ShipIt
 
+> 本文件是 **GitHub `huberyhe/ShipIt` 的发布文档**（分发仓库的 README：功能、下载、安装、使用、截图）。
+
 面向开发者的文件发布工具 —— 将本地文件通过 SFTP/FTP/FTPS/FTPES/本地目录一键上传到多台服务器，集成 Git 变更与提交历史查看。
 
-![版本](https://img.shields.io/badge/version-1.2.1-blue)
+![版本](https://img.shields.io/badge/version-1.2.2-blue)
 ![平台](https://img.shields.io/badge/platform-Windows%2010+-green)
 
 ## 功能特性
@@ -15,8 +17,8 @@
 - **菜单栏**：VS Code 风格菜单（文件 / 视图 / 设置 / 帮助），带快捷键提示与当前项标记
 - **主题**：自动跟随系统 / 深色 / 亮色
 - **无障碍**：键盘可达、焦点环、ARIA 标签
-- **多项目多窗口**：一个托盘、一份配置、一条上传队列；每个项目独立窗口（互不干扰）
-- **CLI / MCP**：内置本地服务端，命令行与 AI Agent 可直接调用（9 个工具：项目 / 目标 / 连通性 / 计划 / 上传 / 任务 / 状态 / 日志）
+- **多项目多窗口**：一个托盘、一份配置、一条上传队列；每个项目独立窗口
+- **CLI / MCP**：内置本地服务端，命令行与 AI Agent 可直接调用（9 个工具）
 
 ## 下载
 
@@ -77,9 +79,9 @@ npx -y @huberyhe/shipit-mcp deploy --project . --target my_dev --wait
 ```
 
 - 前置：桌面版「设置 → 本地服务管理」开启服务（默认关闭）
-- MCP：在宿主里以 `npx -y @huberyhe/shipit-mcp mcp` 启动，暴露 9 个工具
-- 跨机器：桌面版开启「允许来自局域网的连接」，用导出的**连接串** `--connect '<JSON>'` 指定远端
-- 详见 npm 包说明：<https://www.npmjs.com/package/@huberyhe/shipit-mcp>
+- MCP：宿主里以 `npx -y @huberyhe/shipit-mcp mcp` 启动，暴露 9 个工具
+- 跨机器：开启「允许来自局域网的连接」，用导出的**连接串** `--connect '<JSON>'` 指定远端
+- 详见 <https://www.npmjs.com/package/@huberyhe/shipit-mcp>
 
 ## 截图
 
